@@ -18,7 +18,7 @@ function SkillsSection() {
                 <span>Figma</span>
                 <span>AI</span>
               </div>
-              <img className="skills-section__img" src="img/certificate.jpg" alt="my certificate"/>
+              <img className="skills-section__img" src={`${process.env.PUBLIC_URL}/img/certificate.jpg`} alt="my certificate" />
             </div>
           </div>
         </section>

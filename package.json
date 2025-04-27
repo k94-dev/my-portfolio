@@ -2,6 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://k94-dev.github.io/my-portfolio",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -18,11 +19,16 @@
     "scrollreveal": "^4.0.9",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  },
   "scripts": {
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "test": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

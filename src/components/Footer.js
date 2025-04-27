@@ -10,7 +10,7 @@ function Footer() {
             <address className="footer__social">
             <a href="https://t.me/kkkkkkk94" className="footer__icon" title="my telegram" target="_blank" rel="noreferrer">
             <svg className="telegram-icon">
-                  <use href="/img/sprite.svg#icon-telegram"></use>
+                  <use href={`${process.env.PUBLIC_URL}/img/sprite.svg#icon-telegram`}></use>
               </svg>
             </a>
                 <a href="mailto:sergeykom70@gmail.com" className="footer__icon" title="mail me">sergeykom70@gmail.com</a>

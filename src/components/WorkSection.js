@@ -33,47 +33,47 @@ function WorkSection() {
     setIsOpen(false);
   };
 
-  const slides = [
-    {
-      id: 1,
-      preview: 'img/beauty.jpg',
-      type: 'video',
-      src: 'video/beauty.mp4',
-      alt: 'Beauty Site'
-    },
-    {
-  id: 2,
-  preview: 'img/overlay.jpg',
-  type: 'gallery',
-  images: [
-    'img/overlay-show.jpg',
-    'img/overlay-show2.jpg',
-    'img/overlay-show3.jpg'
-  ],
-  alt: 'Stream Overlay'
-},
-    {
-      id: 3,
-      preview: 'img/bakery.jpg',
-      type: 'video',
-      src: 'video/bakery.mp4',
-      alt: 'Bakery Site'
-    },
-    {
-      id: 4,
-      preview: 'img/tree-table.jpg',
-      type: 'video',
-      src: 'video/tree-table.mp4',
-      alt: 'Tree Logging Inventory'
-    },
-    {
-      id: 5,
-      preview: 'img/table.jpg',
-      type: 'video',
-      src: 'video/table.mp4',
-      alt: 'Tournament Table'
-    }
-    ];
+ const slides = [
+  {
+    id: 1,
+    preview: `${process.env.PUBLIC_URL}/img/beauty.jpg`,
+    type: 'video',
+    src: `${process.env.PUBLIC_URL}/video/beauty.mp4`,
+    alt: 'Beauty Site'
+  },
+  {
+    id: 2,
+    preview: `${process.env.PUBLIC_URL}/img/overlay.jpg`,
+    type: 'gallery',
+    images: [
+      `${process.env.PUBLIC_URL}/img/overlay-show.jpg`,
+      `${process.env.PUBLIC_URL}/img/overlay-show2.jpg`,
+      `${process.env.PUBLIC_URL}/img/overlay-show3.jpg`
+    ],
+    alt: 'Stream Overlay'
+  },
+  {
+    id: 3,
+    preview: `${process.env.PUBLIC_URL}/img/bakery.jpg`,
+    type: 'video',
+    src: `${process.env.PUBLIC_URL}/video/bakery.mp4`,
+    alt: 'Bakery Site'
+  },
+  {
+    id: 4,
+    preview: `${process.env.PUBLIC_URL}/img/tree-table.jpg`,
+    type: 'video',
+    src: `${process.env.PUBLIC_URL}/video/tree-table.mp4`,
+    alt: 'Tree Logging Inventory'
+  },
+  {
+    id: 5,
+    preview: `${process.env.PUBLIC_URL}/img/table.jpg`,
+    type: 'video',
+    src: `${process.env.PUBLIC_URL}/video/table.mp4`,
+    alt: 'Tournament Table'
+  }
+];
     
     useEffect(() => {
   if (isOpen) {

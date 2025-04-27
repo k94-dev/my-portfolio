@@ -9,7 +9,7 @@ function AboutSection() {
                 <h2 className="section__title">{t("about.title")}</h2>
                 <div className="about-section__container">
                     <div className="about-section__img">
-                        <img src="img/94.jpg" alt="me"/>
+                        <img src={`${process.env.PUBLIC_URL}/img/94.jpg`} alt="me" />
                     </div>
                     <div className="about-section__info">
                         <h3 className="about-section__subtitle">{t("about.name")}</h3>
