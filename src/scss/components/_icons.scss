@@ -1,0 +1,24 @@
+.telegram-icon {
+    fill: var(--first-color);
+    width: 24px;
+    height: 24px; 
+}
+
+.github {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (min-width: $bp-tablet) {
+.telegram-icon, .github {
+    width: 30px;
+    height: 30px;
+    }
+}
+
+@media screen and (min-width: $bp-desktop) {
+.telegram-icon, .github {    
+        width: 34px;
+        height: 34px;
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "hero" : {
+        "title": "My portfolio"
+    },
+    
+    "header": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "work": "Work",
+        "contact": "Сontact"
+    },
+    "home": {
+        "title": "Main info",
+        "hi": "Hi,",
+        "me": "I'am ",
+        "name": "Serhii",
+        "job": "Frontend developer",
+        "contact": "Contact"
+    },
+
+    "about": {
+        "title": "About me",
+        "name": "I'am Serhii",
+        "fstText": "I’m a frontend developer passionate about building adaptive and user-friendly web interfaces. My journey into IT began with graphic design courses, then QA testing, and eventually led me to web development — where creativity meets logic.",
+        "sText": "I enjoy turning ideas into interactive experiences with clean, well-structured code and thoughtful design. I follow development best practices and love bringing order and clarity to every project.",
+        "tText": "Currently, I’m focused on growing as a frontend developer, with plans to transition into fullstack — expanding my knowledge of backend and application architecture.",
+        "fthText": "Always open to meaningful collaborations and challenges that help me grow."
+
+    }, 
+    "skills": {
+        "title": "My skills"
+    },
+    "work": {
+        "title": "Latest work"
+    },
+    "footer": {
+        "title": "Contact me",
+        "copy": "All rigths reserved"
+    }
+
+
+}

@@ -1,0 +1,75 @@
+.modal-window {
+    width: fit-content;
+        height: fit-content;
+    position: relative;
+    // padding: 32px 54px 0;
+    overflow-y: auto;
+    align-self: center;
+    align-content: center;
+    justify-self: center;
+    text-align: center;
+
+    button:hover {
+        background-color: transparent;
+        border: 2px solid var(--third-color);
+    }
+
+    &__close-button {
+        display: none;
+        position: absolute;
+        right: 17%;
+        top: 0;
+        border: none;
+        cursor: pointer;
+        width: 40px;
+        height: 20px;
+        border-radius: 0.8rem;
+        background-color: var(--third-color);
+        color: var(--first-color);
+    }
+
+         video,
+         .gallery-slider, img {
+             width: 100%;
+             place-self: center;
+         }
+        @media screen and (min-width: $bp-tablet) {
+        video,
+        .gallery-slider {
+        width: 60%;
+        }
+                 &__close-button {
+                     display: block;
+                 }
+                   }
+
+    .gallery-slider {
+        
+        &__controls {
+            color: var(--first-color);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                margin: 0 10px;
+            }
+            button {
+                border-radius: 0.8rem;
+                border: none;
+                background-color: var(--third-color);
+                color: var(--first-color);
+                width: 40px;
+                height: 20px;
+            }
+                        button:hover {
+                            background-color: transparent;
+                            border: 2px solid var(--third-color);
+                            cursor: pointer;
+                        }
+
+        }
+    }
+
+}

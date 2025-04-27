@@ -1,0 +1,29 @@
+.hero-section {
+    padding: 0;
+    display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+        display: block;
+                
+            &__title {
+                z-index: 99;
+                
+                color: var(--second-color);
+                position: static;
+                font-size: 4.5rem;
+                    transform: translate(126vh, -90vh);
+            }
+            &__video-container {
+                min-height: 300vh;
+                position: relative;
+                &--video {
+                    width: 100%;
+                    position: sticky;
+                    top: 0;
+                }
+            }
+            
+        }
+                
+}
+

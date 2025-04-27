@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+body {
+    font-family: 'Rubik';
+    font-size: 0.4rem;
+    color: var(--second-color);
+    font-weight: 500;
+    overflow-x: hidden;
+    user-select: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0.4rem;
+}
+
+@media screen and (min-width: $bp-tablet) {
+    body {
+            font-size: 1rem;
+        }
+        .container {
+            padding: 1rem;
+        }
+        }
+@media screen and (min-width: $bp-desktop) {
+    body {
+            font-size: 1.5rem;
+        }
+                .container {
+                    padding: 1.5rem;
+                }
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

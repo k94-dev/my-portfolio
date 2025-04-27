@@ -1,0 +1,92 @@
+.header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: transparent;
+        box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+        font-size: 1.5rem;
+        backdrop-filter: blur(60px);
+        
+        .container {
+            padding: 0.75rem;
+        }
+
+        a {
+            color: var(--second-color);
+        }
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--second-color);
+                &__link:hover {
+                    color: var(--third-color);
+                }
+
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__list {
+            gap: 30px;
+            display: none;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+                .active-link {
+                    position: relative;
+                    overflow: hidden;
+                }
+                .active-link::after {
+                    position: absolute;
+                    content: "";
+                    width: 0%;
+                    height: 0.2rem;
+                    left: 0;
+                    top: 2rem;
+                    border-radius: 0.8rem;
+                    background-color: var(--third-color);
+                animation: slideLine 0.3s ease-out forwards;
+                }
+                
+                @keyframes slideLine {
+                    to {
+                        width: 100%;
+                    }
+                }
+    }
+        @media screen and (min-width: $bp-tablet) {
+            .container {
+                    padding: 0 0.75rem;
+                }
+                                &-nav {
+            &__list {
+                    display: flex;
+                }
+            &__logo {
+            font-weight: 600;
+        }
+        }
+        }
+    
+        @media screen and (min-width: $bp-desktop) {
+                        .container {
+                                padding: 0 0.75rem;
+                            }
+                        
+                            &-nav {
+                                &__list {
+                                    display: flex;
+                                }
+                        
+                                &__logo {
+                                    font-weight: 600;
+                                }
+                            }
+        }
+}
+
